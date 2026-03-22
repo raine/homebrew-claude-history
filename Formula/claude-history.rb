@@ -1,22 +1,22 @@
 class ClaudeHistory < Formula
   desc "Fuzzy-search Claude Code conversation history from the terminal"
   homepage "https://github.com/raine/claude-history"
-  version "0.1.46"
+  version "0.1.47"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/raine/claude-history/releases/download/v0.1.46/claude-history-darwin-arm64.tar.gz"
-      sha256 "f9522f8edd8237eb26baaef5413f508e84d088322ee3e51ccdac1e06ad3effc0"
+      url "https://github.com/raine/claude-history/releases/download/v0.1.47/claude-history-darwin-arm64.tar.gz"
+      sha256 "0d93047c23e7cad15dffdb9c791374a08353ad835b6bf2cc5a59f2b5345075ae"
     else
-      url "https://github.com/raine/claude-history/releases/download/v0.1.46/claude-history-darwin-amd64.tar.gz"
-      sha256 "c212f968dec76f71866c083eb7ca1362fb6805dc8b2ecc3da3d4d34ff7f2f9db"
+      url "https://github.com/raine/claude-history/releases/download/v0.1.47/claude-history-darwin-amd64.tar.gz"
+      sha256 "fdc26ea5cead7790ea33dfafb1abef8eddd7e2c7e3fe58ce2ffdc3eb68ec4f88"
     end
   end
 
   on_linux do
-    url "https://github.com/raine/claude-history/releases/download/v0.1.46/claude-history-linux-amd64.tar.gz"
-    sha256 "1709335b066e7eeab361c334f89e449b7e7e364d1d5469b34c2bc664c1b944b9"
+    url "https://github.com/raine/claude-history/releases/download/v0.1.47/claude-history-linux-amd64.tar.gz"
+    sha256 "fcaa514ac2829618c07f5245b520f0720b21850eab4ab4172f0522c5fd3a9ceb"
   end
 
   def install
