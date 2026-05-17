@@ -1,22 +1,21 @@
 class ClaudeHistory < Formula
   desc "Fuzzy-search Claude Code conversation history from the terminal"
   homepage "https://github.com/raine/claude-history"
-  version "0.1.57"
+  version "0.1.59"
   license "MIT"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/raine/claude-history/releases/download/v0.1.57/claude-history-darwin-arm64.tar.gz"
-      sha256 "dc2f566ff726abca11b714604f207fe89adfd3d83ca6a642d74256e64b2be1ba"
-    else
-      url "https://github.com/raine/claude-history/releases/download/v0.1.57/claude-history-darwin-amd64.tar.gz"
-      sha256 "3729d8375c7c75a77cb9f1914dcd36f921a2bd24d709d2dab2c675b3cd8ed217"
+    if Hardware::CPU.intel?
+      odie "Intel macOS bottles are not available for this version"
     end
+
+    url "https://github.com/raine/claude-history/releases/download/v0.1.59/claude-history-darwin-arm64.tar.gz"
+    sha256 "c69c7720d33784df47c825cf2d127f8d3b28bec3467cbee402f04abff70a9741"
   end
 
   on_linux do
-    url "https://github.com/raine/claude-history/releases/download/v0.1.57/claude-history-linux-amd64.tar.gz"
-    sha256 "24005c4d2145cb9e9e9e44f095dda3525ad2f705a348006d276ca86ce32759ef"
+    url "https://github.com/raine/claude-history/releases/download/v0.1.59/claude-history-linux-amd64.tar.gz"
+    sha256 "36019a5ff9cd85a7555012aa4e3914ee32e61b634a212a1244367ed698b93162"
   end
 
   def install
