@@ -5,9 +5,7 @@ class ClaudeHistory < Formula
   license "MIT"
 
   on_macos do
-    if Hardware::CPU.intel?
-      odie "Intel macOS bottles are not available for this version"
-    end
+    depends_on arch: :arm64
 
     url "https://github.com/raine/claude-history/releases/download/v0.1.62/claude-history-darwin-arm64.tar.gz"
     sha256 "c3501563f66fabab8f8f4140ad6b2b3e0761ebd2cd674c43391bbca6fde1bc9e"
