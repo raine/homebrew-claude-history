@@ -1,19 +1,19 @@
 class ClaudeHistory < Formula
   desc "Fuzzy-search Claude Code conversation history from the terminal"
   homepage "https://github.com/raine/claude-history"
-  version "0.1.72"
+  version "0.1.73"
   license "MIT"
 
   on_macos do
     depends_on arch: :arm64
 
-    url "https://github.com/raine/claude-history/releases/download/v0.1.72/claude-history-darwin-arm64.tar.gz"
-    sha256 "ba4aca64e1c33b68073e2a09ec04beca063633a4b745da7a145e0ab2ea10fc67"
+    url "https://github.com/raine/claude-history/releases/download/v0.1.73/claude-history-darwin-arm64.tar.gz"
+    sha256 "047cd5153f2d1b04e02e6f204d34e6ff202a9d034c12940fe1286db6cc4a4513"
   end
 
   on_linux do
-    url "https://github.com/raine/claude-history/releases/download/v0.1.72/claude-history-linux-amd64.tar.gz"
-    sha256 "aeb69f64a5915c39cb25267a9551061ec8b7a46fbd8240a409e093fda239bc7a"
+    url "https://github.com/raine/claude-history/releases/download/v0.1.73/claude-history-linux-amd64.tar.gz"
+    sha256 "9cc24a53cf2621842321f3019af33caa3d05e59a79739969580f0831d2f351a8"
   end
 
   def install
